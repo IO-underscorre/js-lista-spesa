@@ -7,3 +7,50 @@
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
+/* Page wrapper */
+.page-wrapper {
+    width: 100%;
+    height: 100vh;
+    background-color: #90c4ae;
+    background-image: radial-gradient(#90c4ae ,  #73bb9d);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: auto;
+}
+
+.page-wrapper > div {
+    width: 100%;
+    overflow: auto;
+}
+
+/* Content */
+.content {
+    margin: 0 auto;
+    width: 95%;
+    max-width: 600px;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: #ffffff;
+}
+
+/* JS output container */
+#shopping-list {
+    padding-top: 1rem;
+    list-style: none;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+/* JS output */
+#shopping-list li {
+    margin-top: 1rem;
+}
+
+#shopping-list li::before {
+    content: '\21AA';
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 1.1rem;
+}
